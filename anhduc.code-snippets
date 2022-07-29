@@ -1,0 +1,53 @@
+{
+  "Print to console": {
+    "scope": "javascript,typescript",
+    "prefix": "cl",
+    "body": ["console.log();"],
+    "description": "Log output to console"
+  },
+
+  "Print to Error": {
+    "scope": "javascript, typescript",
+    "prefix": "ce",
+    "body": ["console.error();"],
+    "description": "Log error to console"
+  },
+
+  "Get Element By Id": {
+    "prefix": "getid",
+    "body": "const $el = document.querySelector('#$el')"
+  },
+
+  "Get Element By Class": {
+    "prefix": "getclass",
+    "body": "const $el = document.querySelector('.$el')"
+  },
+
+  "Get all": {
+    "prefix": "getall",
+    "body": "const $el = document.querySelectorAll('.$el')"
+  },
+
+  "Add Event Listener": {
+    "prefix": "addevent",
+    "body": ["$1.addEventListener('$2', (e) => {", " $0", "});"]
+  },
+
+  "Fetch": {
+    "prefix": "fetch",
+    "body": [
+      "try {",
+      "\tconst res = await fetch('$1');",
+      "\tconst data = await res.json();",
+      "\t$0",
+      "} catch (err) {",
+      "\tconsole.error(err);",
+      "}"
+    ]
+  },
+
+  "Call": {
+    "prefix": "$",
+    "body": "${$0}"
+  }
+}
