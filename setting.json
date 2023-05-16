@@ -50,5 +50,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "editor.cursorBlinking": "expand"
+  "editor.cursorBlinking": "expand",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false
 }

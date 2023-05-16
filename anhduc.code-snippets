@@ -1,4 +1,73 @@
 {
+  "React Typescript Functional Component": {
+    "prefix": "rtsfc",
+    "body": [
+      "import { FC } from 'react';",
+      "",
+      "interface Props {$0}",
+      "",
+      "const ${TM_FILENAME_BASE}: FC<Props> = (props): JSX.Element => {",
+      "  return <div>${TM_FILENAME_BASE}$1</div>;",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ]
+  },
+  "Typescript default React component": {
+    "scope": "typescriptreact",
+    "prefix": "rfcd",
+    "body": [
+      "import React, { FC } from 'react'",
+      "",
+      "interface ${TM_FILENAME_BASE}Props {",
+      "  $1",
+      "}",
+      "",
+      "const ${TM_FILENAME_BASE}: FC<${TM_FILENAME_BASE}Props> = ({ $2 }) => {",
+      "  return (",
+      "    <div>",
+      "     ${3:$TM_FILENAME_BASE}",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ]
+  },
+  "Typescript React component": {
+    "scope": "typescriptreact",
+    "prefix": "rfc",
+    "body": [
+      "import React, { FC } from 'react'",
+      "",
+      "interface ${TM_FILENAME_BASE}Props {",
+      "  $1",
+      "}",
+      "",
+      "export const ${TM_FILENAME_BASE}: FC<${TM_FILENAME_BASE}Props> = ({ $2 }) => {",
+      "  return (",
+      "    <div>",
+      "     ${3:$TM_FILENAME_BASE}",
+      "    </div>",
+      "  )",
+      "}"
+    ]
+  },
+  "Next JS Page With TS": {
+    "prefix": "ntsp",
+    "body": [
+      "import { NextPage } from 'next';",
+      "",
+      "interface Props {}",
+      "",
+      "const ${TM_FILENAME_BASE}: NextPage<Props> = () => {",
+      "  return <div>${TM_FILENAME_BASE}${0}</div>;",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ]
+  },
+
   "Print to console": {
     "scope": "javascript,typescript",
     "prefix": "cl",
